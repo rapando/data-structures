@@ -6,10 +6,10 @@
 #include "linked-lists.h"
 
 
-typedef struct node {
+struct node {
     int data;
     struct node *next;
-} node;
+};
 
 // Entry Function
 void linkedListsEntry() {
@@ -25,7 +25,7 @@ struct node *createLinkedList() {
     struct node *headNode, *currentNode, *temp;
 
     for (int i = 0; i < 10; i++) {
-        currentNode = (node *) malloc(sizeof(node));
+        currentNode = (struct node *) malloc(sizeof(struct node));
         currentNode->data = i;
         if (i == 0) {
             headNode = temp = currentNode;
@@ -38,15 +38,17 @@ struct node *createLinkedList() {
     return headNode;
 }
 
+
+/*
+ * In a linked list with n elements,
+ * the first n-1 items have the 'next' pointer
+ * the nth element has no 'next' pointer, therefore print it too
+ * to do this, don't check if the 'next' pointer is NULL, check if the whole element is null
+*/
 void traverseLinkedList(struct node *head) {
     printf("\nTraversing linked list\n");
-    while(1) {
-        if (head->next != NULL) {
-            printf("Data : %d\n", head->data);
-            head = head->next;
-        } else {
-            printf ("Data : %d\n", head->data);
-            break;
-        }
+    while (head != NULL) {
+        printf("Data : %d\n", head->data);
+        head = head->next;
     }
 }
