@@ -2,7 +2,7 @@
 #include "linked-lists/linked-lists.h"
 
 int main() {
-    printf("Hello, World!\n");
+    printf("Data Structures Demo in C!\n");
     linkedListsEntry();
     return 0;
 }
