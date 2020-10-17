@@ -11,4 +11,10 @@ struct node *createLinkedList();
 
 void traverseLinkedList(struct node *head);
 
+void searchItem(struct node *head, int item);
+
+void deleteItem(struct node **head, int item);
+
+void push(struct node *head, int item);
+
 #endif //DATA_STRUCTURES_LINKED_LISTS_H
