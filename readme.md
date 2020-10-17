@@ -1,6 +1,8 @@
 ## Data Structures in C
 
-#### Building
+Just build with Cmake 
+
+#### Manual Building
 
 ```
 mkdir build && cd build
