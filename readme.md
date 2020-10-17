@@ -9,4 +9,3 @@ cmake ..
 make
 ./data-structures
 ```
-
