@@ -15,7 +15,7 @@ struct node
 // Entry Function
 void linkedListsEntry()
 {
-    printf("******* Linked Lists ******* \n");
+    printf("\n\n******* Linked Lists ******* \n");
     struct node *headNode = createLinkedList();
     traverseLinkedList(headNode);
     searchItem(headNode, 3);
