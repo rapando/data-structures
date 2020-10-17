@@ -10,7 +10,7 @@ int main()
 {
     printf("\n\n DATA STRUCTURES IN C \n\n");
 
-    // linkedListsEntry();
+    linkedListsEntry();
     stackEntry();
     return 0;
 }
